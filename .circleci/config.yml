@@ -23,7 +23,7 @@ jobs:
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
-  multi-line-4mfile:
+  run-newman-atmp1:
    jobs:
       - myJob1
 
