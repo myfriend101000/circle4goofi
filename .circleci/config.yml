@@ -15,7 +15,8 @@ jobs:
     steps:
       - checkout
       - run: |
-          ls
+          ls runTest.sh
+          ./runTest.sh
        
 
 # Orchestrate jobs using workflows
