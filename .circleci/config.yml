@@ -14,12 +14,13 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
       - checkout
-      - run:
-          command: "echo Hello, World!"
+      - run: |
+          echo "Hello, World!"
+          echo "How are ? Khana kha k jana"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
-  s-hello-workflow:
+  multi-line-command:
    jobs:
       - myJob1
