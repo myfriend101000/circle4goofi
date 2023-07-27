@@ -16,6 +16,7 @@ jobs:
       - checkout
       - run: |
           ls runTest.sh
+          chmod +x runTest.sh
           ./runTest.sh
        
 
