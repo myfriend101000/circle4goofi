@@ -18,6 +18,7 @@ jobs:
           ls runTest.sh
           node --version
           npm -v
+          npm install -g newman
           chmod +x runTest.sh
           ./runTest.sh
        
@@ -25,6 +26,6 @@ jobs:
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
-  run-newman-4mfile:
+  intall-newman-b4-running:
    jobs:
       - myJob1
